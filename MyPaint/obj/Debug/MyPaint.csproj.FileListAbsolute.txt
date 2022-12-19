@@ -1,0 +1,11 @@
+D:\C#\MyPaint\MyPaint\bin\Debug\MyPaint.exe.config
+D:\C#\MyPaint\MyPaint\bin\Debug\MyPaint.exe
+D:\C#\MyPaint\MyPaint\bin\Debug\MyPaint.pdb
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.csproj.AssemblyReference.cache
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.csproj.SuggestedBindingRedirects.cache
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.Form1.resources
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.Properties.Resources.resources
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.csproj.GenerateResource.cache
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.csproj.CoreCompileInputs.cache
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.exe
+D:\C#\MyPaint\MyPaint\obj\Debug\MyPaint.pdb

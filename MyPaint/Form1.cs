@@ -32,5 +32,52 @@ namespace MyPaint
                 drawing = true; 
             }
         }
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (drawing)
+            {
+                drawing= false;
+            }
+            else
+            {
+                drawing= true;
+            }
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(drawing)
+            {
+                Graphics g = Graphics.FromImage(bmp);
+                g.DrawEllipse(p, e.X, e.Y, 3, 1);
+                pictureBox1.Image= bmp;
+            }
+        }
+
+        private void Red_Click(object sender, EventArgs e)
+        {
+            p.Color= Color.Red;
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            p.Color= Color.Blue;
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            p.Color= Color.Green;
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Yellow;
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Violet;
+        }
     }
 }
