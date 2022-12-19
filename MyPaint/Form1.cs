@@ -21,18 +21,6 @@ namespace MyPaint
             InitializeComponent();
         }
 
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (drawing)
-            {
-                drawing= false;
-            }
-            else
-            {
-                drawing = true; 
-            }
-        }
-
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             if (drawing)
@@ -79,5 +67,27 @@ namespace MyPaint
         {
             p.Color = Color.Violet;
         }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefiledialog = new SaveFileDialog();
+            savefiledialog.Filter = "JPeg Image|*.jpg|bitmap Image*.bmp";
+            savefiledialog.Title = "Save the Drawing";
+            savefiledialog.ShowDialog();
+            if (savefiledialog.FileName != "")
+            {
+                System.IO.FileStream fs = (System.IO.FileStream)savefiledialog.OpenFile();
+                switch (savefiledialog.FilterIndex)
+                {
+                    case 1:
+                        this.pictureBox1.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        break;
+                    case 2:
+                        this.pictureBox1.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Bmp);
+                        break;
+                }
+            }
+        }
+
     }
 }
