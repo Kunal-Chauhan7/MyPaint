@@ -89,5 +89,14 @@ namespace MyPaint
             }
         }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.Black;
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            p.Color = Color.White;
+        }
     }
 }

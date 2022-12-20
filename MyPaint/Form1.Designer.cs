@@ -42,8 +42,10 @@ namespace MyPaint
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,14 +73,14 @@ namespace MyPaint
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.saveAsToolStripMenuItem.Text = "Save as";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // saveImageToolStripMenuItem
             // 
             this.saveImageToolStripMenuItem.Name = "saveImageToolStripMenuItem";
-            this.saveImageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveImageToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.saveImageToolStripMenuItem.Text = "Save image";
             // 
             // toolStrip1
@@ -88,7 +90,9 @@ namespace MyPaint
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolStripButton4,
-            this.toolStripButton5});
+            this.toolStripButton5,
+            this.toolStripButton1,
+            this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -152,9 +156,20 @@ namespace MyPaint
             this.toolStripButton5.Text = "Violet";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.ForeColor = System.Drawing.Color.Black;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(39, 22);
+            this.toolStripButton1.Text = "Black";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 49);
             this.pictureBox1.Name = "pictureBox1";
@@ -168,6 +183,16 @@ namespace MyPaint
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(84, 22);
+            this.toolStripButton6.Text = "Eraser / White";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // Form1
             // 
@@ -209,6 +234,8 @@ namespace MyPaint
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
     }
 }
 
