@@ -13,7 +13,8 @@ namespace MyPaint
     public partial class Form1 : Form
     {
         Bitmap bmp = new Bitmap(1024, 768);
-        Pen p = new Pen(Color.Black,5);
+        static int size = 4;
+        Pen p = new Pen(Color.Black,size);
         bool drawing = false;
 
         public Form1()
@@ -97,6 +98,41 @@ namespace MyPaint
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
             p.Color = Color.White;
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            size = 1;
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            size = 2;
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            size = 3;
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            size = 4;
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            size = 5;
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            size = 6;
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            size = 7;
         }
     }
 }
