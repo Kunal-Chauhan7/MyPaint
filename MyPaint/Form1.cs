@@ -71,7 +71,7 @@ namespace MyPaint
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog savefiledialog = new SaveFileDialog();
-            savefiledialog.Filter = "JPeg Image|*.jpg|bitmap Image*.bmp";
+            savefiledialog.Filter = "JPeg Image*.jpg|bitmap Image*.bmp";
             savefiledialog.Title = "Save the Drawing";
             savefiledialog.ShowDialog();
             if (savefiledialog.FileName != "")
